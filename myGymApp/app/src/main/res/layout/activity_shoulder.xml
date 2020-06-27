@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40dp">
+    </TextView>
+    <RelativeLayout
+       android:id="@+id/r2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ScrollView
+           android:id="@+id/scroll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center">
+               <TableLayout
+                   android:id="@+id/t1"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="#CCC"
+                   android:paddingTop="1dp"
+                   android:stretchColumns="0,2">
+               </TableLayout>
+               <Button
+                   android:id="@+id/add_button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add Exercise"
+                   android:layout_marginTop="20dp">
+               </Button>
+               <Button
+                   android:id="@+id/delete"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DELETE EXERCISE"
+                   android:layout_marginTop="10dp"
+                   >
+               </Button>
+               <Button
+                   android:id="@+id/viewmax"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="view max weight"
+                   android:layout_marginTop="10dp"
+                   />
+               <Button
+                   android:id="@+id/submit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="submit"
+                   >
+               </Button>
+           </LinearLayout>
+       </ScrollView>
+
+   </RelativeLayout>
+
+    <EditText
+        android:id="@+id/addExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of exercise"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+    </EditText>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/addExercise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add">
+    </Button>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Back">
+
+    </Button>
+</RelativeLayout>

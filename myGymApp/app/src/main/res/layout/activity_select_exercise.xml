@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Exercise"
+        android:gravity="center">
+    </TextView>
+    <Button
+        android:tag="1"
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Back"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="buttonClicked">
+    </Button>
+    <Button
+        android:tag="2"
+        android:id="@+id/bi_tri"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="biceps/triceps"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="buttonClicked">
+    </Button>
+    <Button
+        android:tag="3"
+        android:id="@+id/chest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Chest"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="buttonClicked">
+    </Button>
+    <Button
+        android:tag="4"
+        android:id="@+id/legs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Legs"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="buttonClicked">
+    </Button>
+    <Button
+        android:tag="5"
+        android:id="@+id/shouder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Shoulder"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="buttonClicked">
+    </Button>
+
+
+
+</LinearLayout>
