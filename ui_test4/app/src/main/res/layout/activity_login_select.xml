@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_select"
+    android:background="@drawable/update_page">
+
+    <Button
+        android:id="@+id/admin_login"
+        android:onClick="admin_login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttons"
+        android:layout_centerHorizontal="true"
+        android:text="Admin Login"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/customer_login"
+        android:onClick="customer_login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/admin_login"
+        android:layout_marginTop="50dp"
+        android:text="Customer Login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_width="330dp"
+        android:onClick="maid_login"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttons"
+        android:layout_below="@+id/customer_login"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Maid Login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+</RelativeLayout>

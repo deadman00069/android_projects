@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF9B70">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/back_icon"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+   <Button
+       android:id="@+id/login_email"
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/custom2button"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="100dp"
+       android:gravity="center"
+       android:textColor="#A4A2AA"
+       android:text="Login with Email">
+
+   </Button>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom2button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textColor="#A4A2AA"
+        android:text="Login with facebook">
+
+    </Button>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom2button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textColor="#A4A2AA"
+        android:text="Login with gmail">
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Don't have account?"
+        android:layout_marginTop="600dp"
+        android:textColor="#949397"
+        android:textSize="18sp">
+    </TextView>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="650dp">
+    </Button>
+
+
+
+</RelativeLayout>

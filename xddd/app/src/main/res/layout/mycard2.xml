@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/card_exeName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:text="Leg pess"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/max_weight_text"
+        android:layout_width="66dp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:hint="Max Weight"
+        android:textSize="10sp" />
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ui_test4</string>
+    <string-array name="Area">
+        <item>Select Area </item>
+        <item>Gurgaon</item>
+        <item>Delhi</item>
+        <item>Utter Pradesh</item>
+        <item>comming soon</item>
+        <item>comming soon</item>
+        <item>comming soon</item>
+    </string-array>
+    <string-array name="Location">
+        <item>Select Location</item>
+        <item>Sector 10</item>
+        <item>Sector 10A</item>
+        <item>Sector 9</item>
+        <item>Sector 4</item>
+        <item>comming soon</item>
+    </string-array>
+    <string name="Address">Address :</string>
+    <string name="Phone_no">Phone_No :</string>
+
+
+</resources>

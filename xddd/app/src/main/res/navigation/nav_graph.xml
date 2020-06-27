@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_frag">
+    <fragment
+        android:id="@+id/home_frag"
+        android:name="com.example.xddd.startfrag"
+        android:label="fragment_home_frag"
+        tools:layout="@layout/startfrag">
+        <action
+            android:id="@+id/action_home_frag_to_profile_frag2"
+            app:destination="@id/profile_frag2" />
+        <action
+            android:id="@+id/action_home_frag_to_select_exercise_stats"
+            app:destination="@id/select_exercise_stats" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_frag2"
+        android:name="com.example.xddd.profile_frag"
+        android:label="fragment_profile_frag"
+        tools:layout="@layout/fragment_profile_frag" >
+        <action
+            android:id="@+id/action_profile_frag2_to_profile_edit"
+            app:destination="@id/profile_edit" />
+        <action
+            android:id="@+id/action_profile_frag2_to_profile_view"
+            app:destination="@id/profile_view" />
+        <action
+            android:id="@+id/action_profile_frag2_to_home_frag"
+            app:destination="@id/home_frag"
+            app:popUpTo="@id/home_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_edit"
+        android:name="com.example.xddd.profile_edit"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/action_profile_edit_to_home_frag"
+            app:destination="@id/home_frag" />
+        <action
+            android:id="@+id/action_profile_edit_to_profile_frag2"
+            app:destination="@id/profile_frag2"
+            app:popUpTo="@id/home_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_view"
+        android:name="com.example.xddd.profile_view"
+        android:label="profile_view" >
+        <action
+            android:id="@+id/action_profile_view_to_profile_frag2"
+            app:destination="@id/profile_frag2"
+            app:popUpTo="@id/home_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/training_stat_select"
+        android:name="com.example.xddd.training_stat_select"
+        android:label="fragment_training_stat_select"
+        tools:layout="@layout/fragment_training_stat_select" >
+
+        <argument
+            android:name="e_name"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/select_exercise_stats"
+        android:name="com.example.xddd.select_exercise_stats"
+        android:label="fragment_select_exercise_stats"
+        tools:layout="@layout/fragment_select_exercise_stats" >
+        <action
+            android:id="@+id/action_select_exercise_stats_to_training_stat_select"
+            app:destination="@id/training_stat_select" />
+    </fragment>
+</navigation>

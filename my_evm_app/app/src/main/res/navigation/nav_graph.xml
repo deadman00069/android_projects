@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_screen">
+
+    <fragment
+        android:id="@+id/splash_screen"
+        android:name="com.example.my_evm_app.splash_screen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splash_screen_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.my_evm_app.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_apply_form"
+            app:destination="@id/apply_form" />
+        <action
+            android:id="@+id/action_home2_to_result_page"
+            app:destination="@id/result_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/apply_form"
+        android:name="com.example.my_evm_app.apply_form"
+        android:label="fragment_apply_form"
+        tools:layout="@layout/fragment_apply_form" />
+    <fragment
+        android:id="@+id/result_page"
+        android:name="com.example.my_evm_app.result_page"
+        android:label="fragment_result_page"
+        tools:layout="@layout/fragment_result_page" />
+</navigation>

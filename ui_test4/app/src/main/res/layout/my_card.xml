@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_dislay"
+        android:layout_width="@dimen/nav_header_height"
+        android:layout_height="@dimen/nav_header_height"
+        android:layout_centerVertical="true"
+        android:layout_margin="20sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@+id/image_dislay"
+        android:layout_toRightOf="@+id/image_dislay"
+        android:text="Name : KOnark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/image_dislay"
+        android:layout_toRightOf="@+id/image_dislay"
+        android:gravity="left"
+        android:text="Address : fvguwgfuyewyfgfweyue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@+id/image_dislay"
+        android:layout_toRightOf="@+id/image_dislay"
+        android:text="Phone No: 657865778567"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_no"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@+id/image_dislay"
+        android:layout_toRightOf="@+id/image_dislay"
+        android:text="sjkngsnva, v"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/status"
+        android:layout_marginTop="20dp"
+        android:background="#c0c0c0" />
+
+
+</RelativeLayout>
