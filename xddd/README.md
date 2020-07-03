@@ -3,7 +3,7 @@
 * In this app you can manage your maximum weight you have lifted on a perticular days.
 * just select exercise on Training Plan tab and add exercise.
 * after that just add your maximum-weight of that perticular exercise.
-* you can view your stats on ststs tab.
+* you can view your stats on stats tab.
 * there are 2 ways you can view your stats </br>
  (i) : By days </br>
  (ii) : By viewing graph.
