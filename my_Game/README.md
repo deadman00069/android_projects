@@ -37,5 +37,11 @@ In this there are two games:</br>
   <img src="img/8.jpg" height=800>
  </p>
  <p align="center">
-  <img src="img/9.jpg" height=800>
+  <img src="img/7.jpg" height=800>
+ </p>
+ <p align="center">
+  <img src="img/10.jpg" height=800>
+ </p>
+ <p align="center">
+  <img src="img/88.jpg" height=800>
  </p>
