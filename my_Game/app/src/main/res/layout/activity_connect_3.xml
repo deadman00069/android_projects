@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".connect_3"
+    android:background="@drawable/back_5">
+    <Button
+        android:layout_width="349dp"
+        android:layout_height="87dp"
+        android:background="@drawable/wood_burned"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="CONNECT 3"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="386dp"
+        android:layout_height="372dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="imgclick"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="20sp"
+            android:onClick="imgclick"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="20sp"
+            android:onClick="imgclick"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:onClick="imgclick"
+            android:tag="8" />
+    </GridLayout>
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+        <Button
+            android:id="@+id/txt"
+            android:background="@drawable/wood_burned"
+            android:layout_width="280dp"
+            android:layout_height="72dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="40dp"
+            />
+
+        <Button
+            android:id="@+id/again"
+            android:layout_below="@+id/txt"
+            android:background="@drawable/again"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="play_overagain"/>
+        <Button
+            android:id="@+id/close"
+            android:layout_below="@+id/txt"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/close"
+            android:layout_marginLeft="230dp"
+            android:onClick="btn_close"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
