@@ -1,13 +1,16 @@
-# This is project on weight management app
+# This is project on Max-weight management app
 ### Short intro:
 * In this app you can manage your maximum weight you have lifted on a perticular days.
 * just select exercise on Training Plan tab and add exercise.
 * after that just add your maximum-weight of that perticular exercise.
 * you can view your stats on stats tab.
 * there are 2 ways you can view your stats </br>
- (i) : By days </br>
- (ii) : By viewing graph.
- * you can login using your e-mail or g-mail or facebook.
+ (i) By days </br>
+ (ii) By viewing graph.
+ * you can login using your :
+ 1. E-mail
+ 2. G-mail
+ 3. facebook.
  ### Technology used:
  * java
  * XML
