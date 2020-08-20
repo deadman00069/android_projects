@@ -7,11 +7,11 @@ This app work in 3 ways: </br>
 ###### Note: only admin can add maid.
 
 ### Technology used :
-* java
-* XML
+* Android Studio
+* Java
 
 ### Database used :
-* Firebase Databaase
+* Firebase Database
 
 ### Screenshorts :
 <p align="center">
